@@ -1,14 +1,6 @@
 import "./App.css";
-
-function Navbar({ children }) {
-  return (
-    <>
-      <button class="cs-button" data-filter="one">
-        {children}
-      </button>
-    </>
-  );
-}
+import { Header } from "./components/Header";
+import { Navbar } from "./components/Navbar";
 
 function App() {
   return (
@@ -16,7 +8,7 @@ function App() {
       <section id="collection-1602">
         <div class="cs-container">
           <div class="cs-content">
-            <h2 class="cs-title">New Collection</h2>
+            <Header>New Collection</Header>
             <div class="cs-button-group">
               <Navbar> New Arrival</Navbar>
               <Navbar> Top Rating</Navbar>
